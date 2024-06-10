@@ -1,0 +1,98 @@
+/* styles/global.css */
+
+body {
+  margin: 0;
+}
+
+
+.containerCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px; /* Cardlar arasındaki boşluğu belirtmek için */
+  margin-top: 30px; /* Yukarıda boşluk bırakmak için */
+  margin-bottom: 50px; /* Aşağıda boşluk bırakmak için */
+}
+
+.card {
+  width: 250px; /* Card genişliğini biraz artırdım */
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  height: auto; /* Kart yüksekliğini ayarlayın */
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için geçiş efektleri eklendi */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Hover edildiğinde biraz büyütme efekti */
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1); /* Hover edildiğinde gölge efekti */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 989px) and (max-width: 1200px) {
+  .containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Kartlar arasındaki boşluğu ayarla */
+    padding: 0 10px; /* Kartların kenar boşluğunu ayarla */
+  }
+
+  .card {
+    width: calc(33% - 23px); /* Kartların genişliğini ayarla */
+    padding: 20px; /* Kart içeriğine dolgu ekle */
+  }
+}
+
+
+
+
+
+/* Genel sayfa düzenlemesi */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  body {
+    margin: 0 auto;
+    max-width: 1200px; /* Sayfa genişliğini sınırla */
+  }
+
+  .containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Kartlar arasındaki boşluğu ayarla */
+    padding: 0 10px; /* Kartların kenar boşluğunu ayarla */
+  }
+
+  .card {
+    width: calc(33.33% - 10px); /* Kartların genişliğini ayarla */
+    padding: 15px; /* Kart içeriğine dolgu ekle */
+  }
+}

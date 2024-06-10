@@ -1,0 +1,519 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000080;
+  opacity: 1;
+  margin-bottom: 10px; /* Mesafeyi istediğiniz piksel değeriyle ayarlayabilirsiniz */
+}
+
+.logo a {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: rgb(222, 33, 33); /* Yazı rengi */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Yazıya gölge */
+  font-family: 'Arial', sans-serif; /* Yazı tipi */
+}
+
+.repairIcon {
+  margin-left: 8px; /* İkon ile metin arasında boşluk bırakmak için */
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.tiktok {
+  color: #fff;
+}
+
+.telefon {
+  color: #69c9d0; /* Telefon için farklı bir renk seçebilirsiniz */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+.repairCard {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px; /* İstediğiniz mesafeyi burada ayarlayabilirsiniz */
+}
+
+.imageContainer {
+  flex: 1;
+  margin-right: 30px; /* Burada sağ tarafa mesafe ekleyin */
+  display: flex;
+  justify-content: center; /* İmajı yatayda hizalar */
+  align-items: center; /* İmajı dikeyde hizalar */
+}
+
+.image {
+  width: 100%; /* Resmin genişliğini ayarlayın */
+  height: auto; /* Otomatik yükseklik */
+  border-radius: 10px; /* Kenar yuvarlaklığı ekleyin */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Gölge efekti ekleyin */
+  border: 4px solid #ccc; /* Çerçeve rengi ve genişliği */
+  padding: 8px; /* İmaj ile çerçeve arasında boşluk bırakır */
+}
+
+.content {
+  flex: 2;
+  padding: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.repairCard {
+  border: 6px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.cardContent {
+  display: flex;
+}
+
+.cardImage {
+  width: 500px;
+  height: 350px;
+  border-radius: 10%;
+  margin-right: 100px;
+  margin-left: 40px;
+}
+
+.cardText {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.repairCardSocialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* İhtiyaca göre ayarlayın */
+}
+
+.repairCardSocialIcons .socialButton {
+  border: none; /* Kenarlık kaldır */
+  padding: 25px; /* Daha büyük boyut için artırılmış dolgu */
+  margin: 0 15px; /* Artırılmış kenar boşluğu */
+  border-radius: 50%; /* Düğmeleri yuvarlak hale getir */
+  transition: background-color 0.3s ease; /* Arka plan rengi değişimini yumuşat */
+}
+
+/* Her bir Sosyal Medya simgesi için stil */
+.repairCardInstagram,
+.repairCardWhatsapp,
+.repairCardTiktok,
+.repairCardTelefon {
+  font-size: 40px; /* Simgelerin boyutunu ayarlayın */
+}
+
+
+/* Her bir Sosyal Medya simgesi için stil */
+.repairCardInstagram {
+  background-color: #e1306c;  /* Tiktok rengi */
+}
+
+.repairCardWhatsapp {
+  background-color: #25d366; /* Whatsapp rengi */
+}
+
+.repairCardTiktok {
+  background-color: black; /* Tiktok rengi */
+}
+
+.repairCardTelefon {
+  background-color: #1690bc; /* Instagram rengi */
+}
+
+/* Simgelerin beyaz olması */
+.repairCardSocialIcons .socialButton svg {
+  color: white;
+}
+
+/* Üzerine gelindiğinde arka plan rengini açıklaştırma efekti */
+.repairCardSocialIcons .socialButton:hover {
+  filter: brightness(1.2); /* Üzerine gelindiğinde arka plan rengini açıklaştır */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer.module.css */
+
+.footer {
+  background-color: #000080;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoText {
+  margin-left: 16px;
+}
+
+.footerSocial {
+  display: flex;
+}
+
+.footerSocial .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Hover efekti için geçiş efekti eklendi */
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.tiktok {
+  color: #fff;
+}
+
+.telefon {
+  color: #69c9d0; /* Telefon için farklı bir renk seçebilirsiniz */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footerBottom {
+  text-align: center;
+}
+
+.footerBottom p {
+  margin: 5px 0;
+}
+
+.footerBottom p:first-child {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header.module.css */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo a {
+    margin-bottom: 1rem;
+  }
+}
+
+/* RepairCard.module.css */
+@media screen and (max-width: 768px) {
+  .repairCard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardImage {
+    margin: 0; /* Sağ ve sol boşlukları kaldır */
+  }
+
+  .cardText {
+    text-align: center;
+    margin-top: 1rem; /* Metni üstten biraz aşağıya kaydır */
+  }
+}
+
+/* Footer.module.css */
+@media screen and (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerSocial {
+    margin-top: 1rem; /* Sosyal ikonlara biraz boşluk ekle */
+  }
+}
+
+/* Home.module.css */
+@media screen and (max-width: 768px) {
+  .containerCards {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 20px); /* Cardları yatayda iki sütuna bölmek için genişliği ayarla */
+  }
+}
+
+
+
+/* Home.module.css */
+.slider {
+  text-align: center;
+}
+
+/* Büyük ekranlar için slider'ı yeniden yapılandır */
+@media screen and (min-width: 768px) {
+  .slider img {
+    max-width: 100%; /* Resmi ekran genişliğine uyacak şekilde ayarlayın */
+    height: auto; /* Otomatik yükseklik */
+    max-height: 400px; /* Maksimum yükseklik ayarlayın */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RepairCard.module.css */
+@media screen and (max-width: 768px) {
+  .repairCard {
+    padding: 20px; /* Kenarlarda biraz boşluk bırak */
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardText {
+    text-align: center;
+    margin-top: 1rem; /* Metni üstten biraz aşağıya kaydır */
+  }
+
+  .cardImage {
+    width: 100%; /* Resmi genişlik ile uyumlu yap */
+    max-width: 300px; /* Maksimum genişliği ayarla */
+    height: auto; /* Yükseklik otomatik olsun */
+    margin-bottom: 1rem; /* Resim ile metin arasına biraz boşluk bırak */
+  }
+}
+
+/* RepairCard.module.css */
+.repairCardSocialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* İhtiyaca göre ayarlayın */
+}
+
+.repairCardSocialIcons .socialButton {
+  border: none; /* Kenarlık kaldır */
+  padding: 1rem; /* Daha büyük boyut için artırılmış dolgu */
+  margin: 0 0.5rem; /* Artırılmış kenar boşluğu */
+  border-radius: 50%; /* Düğmeleri yuvarlak hale getir */
+  transition: background-color 0.3s ease; /* Arka plan rengi değişimini yumuşat */
+}
+
+/* Her bir Sosyal Medya simgesi için stil */
+.repairCardInstagram,
+.repairCardWhatsapp,
+.repairCardTiktok,
+.repairCardTelefon {
+  font-size: 32px; /* Simgelerin boyutunu ayarlayın */
+}
+
+/* Simgelerin beyaz olması */
+.repairCardSocialIcons .socialButton svg {
+  color: white;
+}
+
+/* Üzerine gelindiğinde arka plan rengini açıklaştırma efekti */
+.repairCardSocialIcons .socialButton:hover {
+  filter: brightness(1.2); /* Üzerine gelindiğinde arka plan rengini açıklaştır */
+}
+
+
+
+/* RepairCard.module.css */
+@media screen and (max-width: 576px) {
+  .slider img {
+    max-width: 100%; /* Resmi ekran genişliğine uyacak şekilde ayarlayın */
+    height: auto; /* Otomatik yükseklik */
+    max-height: 250px; /* Maksimum yükseklik ayarlayın */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RepairCard.module.css */
+/* Büyük tabletler için stiller */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .repairCard {
+    padding: 20px; /* Kenarlarda biraz boşluk bırak */
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardText {
+    text-align: center;
+    margin-top: 1rem; /* Metni üstten biraz aşağıya kaydır */
+  }
+
+  .cardImage {
+    width: 100%; /* Resmi genişlik ile uyumlu yap */
+    max-width: 480px; /* Maksimum genişliği ayarla */
+    height: auto; /* Yükseklik otomatik olsun */
+    margin-bottom: 1rem; /* Resim ile metin arasına biraz boşluk bırak */
+  }
+}
+
+/* Slider için stiller */
+.slider {
+  text-align: center;
+}
+
+/* Büyük tabletler için slider'ı yeniden yapılandır */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider img {
+    max-width: 100%; /* Resmi ekran genişliğine uyacak şekilde ayarlayın */
+    height: auto; /* Otomatik yükseklik */
+    max-height: 500px; /* Maksimum yükseklik ayarlayın */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
